@@ -10,7 +10,7 @@ from google.colab import files
 api_input = widgets.Textarea(value='', placeholder='Nhập các API key, mỗi dòng một key', description='🔑 API Key:', layout={'width': '100%', 'height': '100px'})
 voice_id_input = widgets.Text(value='', placeholder='Nhập Voice ID', description='🗣️ Voice ID:', layout={'width': '100%'})
 text_input = widgets.Textarea(value='', placeholder='Nhập văn bản cần tạo giọng...', description='📘 Văn bản:', layout={'width': '100%', 'height': '200px'})
-model_dropdown = widgets.Dropdown(options=[("Eleven Multilingual v2", "eleven_multilingual_v2"), ("Eleven Flash v2.5", "eleven_flash_v2_5"), ("Eleven Turbo v2.5", "eleven_turbo_v2_5")], value="eleven_flash_v2_5", description='🎷 Model:')
+model_dropdown = widgets.Dropdown(options=[("Eleven v3", "eleven_v3"),("Eleven Multilingual v2", "eleven_multilingual_v2"), ("Eleven Flash v2.5", "eleven_flash_v2_5"), ("Eleven Turbo v2.5", "eleven_turbo_v2_5")], value="eleven_flash_v2_5", description='🎷 Model:')
 slider_stability = widgets.FloatSlider(value=0.3, min=0, max=1.0, step=0.05, description='🔧 Stability')
 slider_similarity = widgets.FloatSlider(value=0.75, min=0, max=1.0, step=0.05, description='🎻️ Similarity')
 slider_style = widgets.FloatSlider(value=0.0, min=0, max=1.0, step=0.05, description='🎨 Style')
