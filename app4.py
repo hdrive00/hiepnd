@@ -16,8 +16,8 @@ import time
 def generate_voice(text, api_key, voice_id, model_version, stability=0.3, similarity=0.75, style=None, speed=None, speaker_boost=True):
     # Xác định model dựa trên phiên bản đã chọn
     models = {
-        "V3": "eleven_v3",
         "Zilankhulo zambiri v2": "eleven_multilingual_v2",
+        "Zilankhulo zambiri v2": "eleven_v3",
         "Turbo v2.5": "eleven_turbo_v2"
     }
     model_id = models.get(model_version, "eleven_multilingual_v2")
